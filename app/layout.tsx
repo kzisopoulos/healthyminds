@@ -15,9 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-slate-50">
-        <main className="app">
+        <main className="app ">
           <Nav />
-          {children}
+          <section className="min-h-[calc(100vh-230px)]">{children}</section>
           <Footer />
         </main>
       </body>
