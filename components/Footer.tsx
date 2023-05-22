@@ -12,11 +12,11 @@ const Footer = () => {
   return (
     <footer>
       <hr className="my-3 h-0.5 border-t-0 bg-green-100 opacity-100 dark:opacity-50" />
-      <div className="green_gradient text-center font-semibold">
+      <div className="green_gradient text-center font-semibold my-2">
         healthyminds.
       </div>
       <div className="flex flex-col items-center gap-2 md:flex-row md:justify-between">
-        <nav className="flex flex-col items-center gap-1 text-xs text-green-800 md:w-60 md:items-start">
+        <nav className="flex flex-col items-center gap-1 text-xs text-green-800 md:w-60 md:items-end lg:items-start">
           <Link href="/">Αρχική</Link>
           <Link href="/">Υπηρεσίες</Link>
           <Link href="/">Blog</Link>
@@ -34,7 +34,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="flex flex-col gap-1 text-green-800 text-xs items-center md:w-60 md:items-start ">
+        <div className="flex flex-col gap-1 text-green-800 text-xs items-center md:w-60 md:items-start lg:items-end">
           <a href="tel:+6949374893" className="flex items-center gap-1 ">
             <FaPhone /> +30 694 9374893
           </a>
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center text-green-800 text-xs mt-2">
+      <div className="text-center text-green-800 text-xs mt-4">
         Healthyminds&reg; {new Date().getFullYear()} All Rights Reserved
       </div>
     </footer>
