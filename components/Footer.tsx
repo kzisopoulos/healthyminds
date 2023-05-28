@@ -18,9 +18,9 @@ const Footer = () => {
       <div className="flex flex-col items-center gap-2 md:flex-row md:justify-between">
         <nav className="flex flex-col items-center gap-1 text-xs text-green-800 md:w-60 md:items-end lg:items-start">
           <Link href="/">Αρχική</Link>
-          <Link href="/">Υπηρεσίες</Link>
-          <Link href="/">Blog</Link>
-          <Link href="/">Επικοινωνία</Link>
+          <Link href="/services">Υπηρεσίες</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/contact">Επικοινωνία</Link>
         </nav>
         <div className="flex-center">
           <a href="" className="block  hover:bg-green-100 rounded-full p-2">
@@ -34,7 +34,7 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="flex flex-col gap-1 text-green-800 text-xs items-center md:w-60 md:items-start lg:items-end">
+        <div className="flex flex-col gap-1 text-green-800 text-xs items-center md:w-64 md:items-start lg:items-end">
           <a href="tel:+6949374893" className="flex items-center gap-1 ">
             <FaPhone /> +30 694 9374893
           </a>
@@ -44,12 +44,9 @@ const Footer = () => {
           >
             <FaEnvelope /> healthyminds@gmail.gr
           </a>
-          <a
-            href="mailto:healthyminds@gmail.gr"
-            className="flex items-center gap-1"
-          >
+          <span className="flex items-center gap-1">
             <FaMapMarkerAlt /> Αναξαγόρα 18, Νέα Φιλαδέλφεια, 14342
-          </a>
+          </span>
         </div>
       </div>
 

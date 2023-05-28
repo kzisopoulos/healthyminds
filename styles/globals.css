@@ -93,7 +93,7 @@
 /* Tailwind Styles */
 
 .app {
-  @apply max-w-7xl mx-auto sm:px-16 px-6;
+  @apply max-w-7xl mx-auto sm:px-16 px-6 text-gray-700 tracking-wide;
 }
 
 .black_btn {
@@ -157,6 +157,12 @@
 /* Nav Component */
 .logo_text {
   @apply font-satoshi font-semibold text-3xl  tracking-wide;
+}
+.heading_text {
+  @apply font-satoshi font-semibold text-3xl md:leading-relaxed;
+}
+.subheading_text {
+  @apply font-satoshi font-semibold text-xl;
 }
 
 .dropdown {
