@@ -1,12 +1,12 @@
 "use client";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useSubmitContactForm } from "@lib/http/HttpClient";
 import { ContactFormInputs, contactFormSchema } from "@lib/http/api";
 import { toast } from "react-toastify";
 import { AxiosError } from "axios";
 import { useState } from "react";
 import { FaSpinner } from "react-icons/fa";
+import { submitContactForm } from "@lib/http/HttpClient";
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -19,7 +19,7 @@ const ContactForm = () => {
   const onFormSubmission = async (data: ContactFormInputs) => {
     try {
       setIsLoading(true);
-      const res = await useSubmitContactForm(data);
+      const res = await submitContactForm(data);
       console.log(res);
       toast.success(res.data.message);
     } catch (error: any) {
