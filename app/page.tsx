@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaCaretRight } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -23,15 +24,57 @@ export default function Home() {
           Γνωριστε μας
         </Link>
       </div>
-      <article className="">
-        <Image
-          src={"/hero.jpg"}
-          alt="Picture one hand trying to help another"
-          width={400}
-          height={300}
-          className=" mx-auto rotate-90 aspect-square rounded-full shadow-xl"
-        />
-      </article>
+      <Image
+        src={"/hero.jpg"}
+        alt="Picture one hand trying to help another"
+        width={400}
+        height={300}
+        className=" mx-auto rotate-90 aspect-square rounded-full shadow-xl"
+      />
+      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-8 dark:bg-gray-700"></hr>
+      <div className="flex flex-col gap-4 justify-center lg:flex-row lg:gap-10">
+        <div className="glassmorphism w-full">
+          <h3 className="green_gradient md:text-xl font-semibold">
+            Μεθοδολογία
+          </h3>
+          <p className="py-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            tempora fugiat velit reiciendis, autem nemo minima voluptatibus,
+            amet dignissimos est quidem ullam doloremque cupiditate sequi nisi
+            repellat dolores similique. Explicabo!
+          </p>
+        </div>
+        <div className="glassmorphism w-full">
+          <h3 className="green_gradient md:text-xl font-semibold">
+            Πλεονεκτήματα
+          </h3>
+          <ul className="py-2">
+            <li className="flex items-center">
+              <FaCaretRight />
+              Lorem, ipsum.
+            </li>
+            <li className="flex items-center">
+              <FaCaretRight />
+              Lorem, ipsum.
+            </li>
+            <li className="flex items-center">
+              <FaCaretRight />
+              Lorem, ipsum.
+            </li>
+            <li className="flex items-center">
+              <FaCaretRight />
+              Lorem, ipsum.
+            </li>
+          </ul>
+          <Link
+            href="/services"
+            className="inline-block uppercase orange_background text-white font-semibold py-2 px-4 text-md rounded-md"
+          >
+            Υπηρεσιες
+          </Link>
+        </div>
+      </div>
+      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-8 dark:bg-gray-700"></hr>
     </section>
   );
 }
