@@ -36,13 +36,13 @@ const Footer = () => {
 
         <div className="flex flex-col gap-1 text-green-800 text-xs items-center md:w-64 md:items-start lg:items-end">
           <a href="tel:+6949374893" className="flex items-center gap-1 ">
-            <FaPhone /> +30 694 9374893
+            <FaPhone /> +30 694 8779291
           </a>
           <a
-            href="mailto:healthyminds@gmail.gr"
+            href="mailto:healthyminds.gr@gmail.com"
             className="flex items-center gap-1"
           >
-            <FaEnvelope /> healthyminds@gmail.gr
+            <FaEnvelope /> healthyminds.gr@gmail.com
           </a>
           <span className="flex items-center gap-1">
             <FaMapMarkerAlt /> Αναξαγόρα 18, Νέα Φιλαδέλφεια, 14342

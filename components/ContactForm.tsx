@@ -87,7 +87,7 @@ const ContactForm = () => {
         )}
         <button
           type="submit"
-          className="mt-2 border-2 border-amber-500 uppercase bg-amber-500 rounded-md text-white font-semibold py-1 px-4 "
+          className="mt-2 orange_background uppercase text-white font-semibold py-2 px-4 rounded-md "
         >
           <div className="flex items-center gap-2">
             Αποστολη
