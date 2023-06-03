@@ -18,6 +18,7 @@ const Footer = () => {
       <div className="flex flex-col items-center gap-2 md:flex-row md:justify-between">
         <nav className="flex flex-col items-center gap-1 text-xs text-green-800 md:w-60 md:items-end lg:items-start">
           <Link href="/">Αρχική</Link>
+          <Link href="/about">Σχετικά με εμάς</Link>
           <Link href="/services">Υπηρεσίες</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/contact">Επικοινωνία</Link>

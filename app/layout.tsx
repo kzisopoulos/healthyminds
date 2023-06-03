@@ -14,8 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-slate-50">
-        <main className="app bg-gradient-to-r from-green-50 via-amber-50 to-green-50">
+      <body className="bg-gradient-to-r from-green-50 via-amber-50 to-green-50">
+        <main className="app ">
           <Nav />
           <section className="min-h-[calc(100vh-230px)]">{children}</section>
           <Footer />

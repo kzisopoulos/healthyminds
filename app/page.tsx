@@ -16,7 +16,7 @@ export default function Home() {
         sint eius, deleniti natus in sed cupiditate dolores ullam. Eveniet
         doloribus ut earum.
       </p>
-      <div className="text-center p-4">
+      <div className="text-center pt-4 pb-8">
         <Link
           href="/about"
           className="inline-block uppercase orange_background text-white font-semibold py-2 px-4 rounded-md"
@@ -38,37 +38,68 @@ export default function Home() {
             Μεθοδολογία
           </h3>
           <p className="py-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-            tempora fugiat velit reiciendis, autem nemo minima voluptatibus,
-            amet dignissimos est quidem ullam doloremque cupiditate sequi nisi
-            repellat dolores similique. Explicabo!
+            Το θεραπευτικό μοντέλο που υποστηρίζουμε στο HealthyMinds είναι η
+            γνωσιακή συμπεριφορική θεραπεία (ΓΣΘ). Το συγκεκριμένο μοντέλο
+            θεραπείας απαιτεί από τον θεραπευτή και τον θεραπευόμενο να
+            δουλέψουν μαζί ώστε να επιτύχουν την αναγνώριση και την κατανόηση
+            των προβλημάτων που υπάρχουν ανάμεσα στις σκέψεις, τα συναισθήματα
+            και τη συμπεριφορά. Η θεραπεία αφορά το τώρα και τα συμπτώματα του
+            παρόντος.
+          </p>
+          <p className="py-2">
+            Στόχος είναι να προσφέρει μια άμεση ανακούφιση στον θεραπευόμενο
+            δουλεύοντας αυτά που τον απασχολούν εδώ και τώρα. Αυτή η θεραπευτική
+            διαδικασία οδηγεί στον καθορισμό των στόχων που θα τεθούν και στην
+            στρατηγική που θα ακολουθηθεί για την επίτευξη.
+          </p>
+          <p>
+            Τέλος, η ΓΣΘ μπορεί να χρησιμοποιηθεί είτε μόνη της είτε σε
+            συνδυασμό με την κατάλληλη φαρμακευτική αγωγή, ανάλογα με την
+            σοβαρότητα της κατάστασης του κάθε θεραπευόμενου.
           </p>
         </div>
         <div className="glassmorphism w-full">
           <h3 className="green_gradient md:text-xl font-semibold">
-            Πλεονεκτήματα
+            Ωφέλη Ψυχοθεραπείας
           </h3>
-          <ul className="py-2">
+          <p className="pt-2">Που μπορεί να βοηθήσει η ΓΣΘ</p>
+          <ul className="py-2 flex flex-col gap-1">
             <li className="flex items-center">
               <FaCaretRight />
-              Lorem, ipsum.
+              Αγχώδεις διαταραχές
             </li>
             <li className="flex items-center">
               <FaCaretRight />
-              Lorem, ipsum.
+              Φοβίες
             </li>
             <li className="flex items-center">
               <FaCaretRight />
-              Lorem, ipsum.
+              Κατάθλιψη
             </li>
             <li className="flex items-center">
               <FaCaretRight />
-              Lorem, ipsum.
+              Διατροφικές διαταραχές
+            </li>
+            <li className="flex items-center">
+              <FaCaretRight />
+              Ψυχαναγκαστική Καταναγκαστική (ή Ιδεοληπτική) Διαταραχή
+            </li>
+            <li className="flex items-center">
+              <FaCaretRight />
+              Προβλήματα διαχείρισης θυμού
+            </li>
+            <li className="flex items-center">
+              <FaCaretRight />
+              Προβλήματα σχέσεων
+            </li>
+            <li className="flex items-center">
+              <FaCaretRight />
+              Προβλήματα με αλκοόλ ή ουσίες
             </li>
           </ul>
           <Link
             href="/services"
-            className="inline-block uppercase orange_background text-white font-semibold py-2 px-4 text-md rounded-md"
+            className="inline-block mt-4 uppercase orange_background text-white font-semibold py-2 px-4 text-base rounded-md"
           >
             Υπηρεσιες
           </Link>

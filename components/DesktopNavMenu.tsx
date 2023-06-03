@@ -9,6 +9,9 @@ const DesktopNavMenu: FC<DesktopNavMenuProps> = ({}) => {
       <Link className="link" href="/">
         Αρχική
       </Link>
+      <Link className="link" href="/about">
+        Σχετικά με εμάς
+      </Link>
       <Link className="link" href="/services">
         Υπηρεσίες
       </Link>

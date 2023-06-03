@@ -24,6 +24,9 @@ const MobileNavMenu = () => {
           <DropdownMenu.Item className="cursor-pointer group  rounded-[3px] flex items-center p-2 relative pl-[25px] select-none outline-none  data-[highlighted]:bg-green-200 data-[highlighted]:text-black1">
             <Link href="/">Αρχική</Link>
           </DropdownMenu.Item>
+          <DropdownMenu.Item className="cursor-pointer group  rounded-[3px] flex items-center p-2 relative pl-[25px] select-none outline-none  data-[highlighted]:bg-green-200 data-[highlighted]:text-black1">
+            <Link href="/about">Σχετικά με εμάς</Link>
+          </DropdownMenu.Item>
           <DropdownMenu.Item className="cursor-pointer group   rounded-[3px] flex items-center p-2 relative pl-[25px] select-none outline-none  data-[highlighted]:bg-green-200 data-[highlighted]:text-black1">
             <Link href="/services">Υπηρεσίες</Link>
           </DropdownMenu.Item>
