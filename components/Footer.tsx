@@ -24,13 +24,25 @@ const Footer = () => {
           <Link href="/contact">Επικοινωνία</Link>
         </nav>
         <div className="flex-center">
-          <a href="" className="block  hover:bg-green-100 rounded-full p-2">
+          <a
+            href="https://www.facebook.com/HealthyMinds.gr/"
+            target="_blank"
+            className="block  hover:bg-green-100 rounded-full p-2"
+          >
             <FaFacebookF className="text-green-800" />
           </a>
-          <a href="" className="block  hover:bg-green-100 rounded-full p-2">
+          <a
+            href="https://www.instagram.com/healthyminds.gr/"
+            target="_blank"
+            className="block  hover:bg-green-100 rounded-full p-2"
+          >
             <FaInstagram className="text-green-800" />
           </a>
-          <a href="" className="block  hover:bg-green-100 rounded-full p-2">
+          <a
+            href="https://gr.linkedin.com/"
+            target="_blank"
+            className="block  hover:bg-green-100 rounded-full p-2"
+          >
             <FaLinkedinIn className="text-green-800" />
           </a>
         </div>
