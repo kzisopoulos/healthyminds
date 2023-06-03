@@ -9,12 +9,15 @@ export default function Home() {
         HealthyMinds.
       </h1>
       <p className="text-center max-w-xl mx-auto p-4">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
-        exercitationem magni! Repudiandae laboriosam nihil reprehenderit amet
-        modi eos est soluta nulla quis, ut libero nesciunt natus, dicta dolorum
-        quibusdam optio laborum cumque officiis, aliquid molestiae quod. Impedit
-        sint eius, deleniti natus in sed cupiditate dolores ullam. Eveniet
-        doloribus ut earum.
+        Καλωσήρθατε στο HealthyMinds, ο έμπιστος προορισμός σας για ψυχική υγεία
+        και ευεξία. Στο HealthyMinds, καταλαβαίνουμε το πόσο σημαντικό ρόλο
+        παίζει η ψυχική υγεία στον καθένα μας και στην ποιότητα ζωής μας.
+      </p>
+      <p className="text-center max-w-xl mx-auto p-4">
+        Με πελατοκεντρική προσέγγιση και βαθιά κατανόηση του να είσαι καλά
+        ψυχολογικά , προσπαθούμε να δημιουργήσουμε ένα ασφαλές περιβάλλον όπου
+        οι θεραπευόμενοι θα μπορούν να εκφράσουν τις σκέψεις , τα συναισθήματα
+        και τις εμπειρίες τους.
       </p>
       <div className="text-center pt-4 pb-8">
         <Link
@@ -25,13 +28,13 @@ export default function Home() {
         </Link>
       </div>
       <Image
-        src={"/hero.jpg"}
+        src={"/hero2.jpg"}
         alt="Picture one hand trying to help another"
         width={400}
         height={300}
-        className=" mx-auto rotate-90 aspect-square rounded-full shadow-xl"
+        className=" mx-auto aspect-square rounded-full shadow-xl object-cover"
       />
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-8 dark:bg-gray-700"></hr>
+      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
       <div className="flex flex-col gap-4 justify-center lg:flex-row lg:gap-10">
         <div className="glassmorphism w-full">
           <h3 className="green_gradient md:text-xl font-semibold">
@@ -105,7 +108,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-8 dark:bg-gray-700"></hr>
+      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
     </section>
   );
 }
