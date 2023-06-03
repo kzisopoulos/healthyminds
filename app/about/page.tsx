@@ -13,8 +13,8 @@ const About = ({}) => {
     <section className="py-8">
       <article>
         <h4 className="heading_text mb-8 text-center">
-          Λίγα λόγια για το{" "}
-          <span className="orange_gradient">HealthyMinds.</span>
+          Λίγα λόγια για το
+          <span className="orange_gradient"> HealthyMinds.</span>
         </h4>
         <div className="flex flex-col md:flex-row md:items-center gap-10">
           <Image
@@ -64,7 +64,9 @@ const About = ({}) => {
               height={200}
               className="aspect-square rounded-full object-cover shadow-lg mx-auto mb-2"
             />
-            <p className="text-xs text-center">"Κλινικός Ψυχολόγος, Ιδρυτής"</p>
+            <p className="text-xs text-center">
+              &quot;Κλινικός Ψυχολόγος, Ιδρυτής&quot;
+            </p>
           </div>
           <div className="glassmorphism w-full my-2 text-sm ">
             <h3 className="text-xl text-center pb-2">Μιχάλης Βαζούρας</h3>
