@@ -1,10 +1,13 @@
 import Footer from "@components/Footer";
 import Nav from "@components/Nav";
 import "@styles/globals.css";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "Healthyminds",
-  description: "Καλωσήρθατε στην Healthyminds",
+export const metadata: Metadata = {
+  title:
+    "Healthyminds | Αρχική | Γραφείο Ψυχολόγου Μιχάλη Βαζούρα | Νεα Φιλαδέλφεια",
+  description:
+    "Καλωσήρθατε στο HealthyMinds. Το γραφείο του κλινικού ψυχολόγου Μιχάλη Βαζούρα με έδρα στην Νέα Φιλαδέλφεια. Που εξειδικέυεται στην Γνωσιακή Συμπεριφορική Θεραπεία (ΓΣΘ)",
 };
 
 export default function RootLayout({

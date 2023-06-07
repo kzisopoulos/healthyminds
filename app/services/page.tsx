@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
@@ -28,5 +29,10 @@ const page: FC<pageProps> = ({}) => {
     </section>
   );
 };
-
+export const metadata: Metadata = {
+  title:
+    "Healthyminds | Υπηρεσίες | Γραφείο Ψυχολόγου Μιχάλη Βαζούρα | Νεα Φιλαδέλφεια",
+  description:
+    "Healthyminds | Υπηρεσίες | Ενημερωθείτε για τις υπηρεσίες που προσφέρουμε στο HealthyMinds.",
+};
 export default page;

@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
@@ -27,6 +28,12 @@ const page: FC<pageProps> = ({}) => {
       </Link>
     </section>
   );
+};
+export const metadata: Metadata = {
+  title:
+    "Healthyminds | Άρθρα - Blog | Γραφείο Ψυχολόγου Μιχάλη Βαζούρα | Νεα Φιλαδέλφεια",
+  description:
+    "Healthyminds | Αρθρογραφία - Blogs | Διαβάστε πρώτοι τα νέα άρθρα του κλινικού ψυχολόγου Μιχάλη Βαζούρα.",
 };
 
 export default page;

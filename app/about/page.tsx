@@ -1,4 +1,5 @@
 import AccordionQA from "@components/AccordionQA";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -161,5 +162,10 @@ const About = ({}) => {
     </section>
   );
 };
-
+export const metadata: Metadata = {
+  title:
+    "Healthyminds | Σχετικά με εμάς | Γραφείο Ψυχολόγου Μιχάλη Βαζούρα | Νεα Φιλαδέλφεια",
+  description:
+    "Healthyminds | Επικοινωνία | Στείλτε μας την ερώτηση σας και θα επικοινωνήσουμε μαζί σας εντός 24 ωρών.",
+};
 export default About;
