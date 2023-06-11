@@ -30,6 +30,7 @@ export default function Home() {
       <Image
         src={"/hero2.jpg"}
         alt="Picture one hand trying to help another"
+        priority={true}
         width={400}
         height={400}
         className=" mx-auto aspect-square rounded-full shadow-xl object-cover"
