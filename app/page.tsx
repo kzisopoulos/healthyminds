@@ -34,7 +34,7 @@ export default function Home() {
         height={300}
         className=" mx-auto aspect-square rounded-full shadow-xl object-cover"
       />
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10" />
       <div className="flex flex-col gap-4 justify-center lg:flex-row lg:gap-10">
         <div className="glassmorphism w-full">
           <h3 className="green_gradient md:text-xl font-semibold">
@@ -108,7 +108,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
     </section>
   );
 }

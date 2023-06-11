@@ -37,7 +37,7 @@ const ContactForm = () => {
     <div className="mx-auto w-full  py-10">
       <form
         onSubmit={handleSubmit(onFormSubmission)}
-        className="w-full max-w-2xl p-2 sm:p-5 mt-5 rounded-md mx-auto shadow-xl"
+        className="w-full max-w-2xl p-2 sm:p-5 mt-5 rounded-md mx-auto shadow-[0_7px_29px_0_rgba(100,100,111,0.2)]"
       >
         <label className="block p-1">Όνομα</label>
         <input

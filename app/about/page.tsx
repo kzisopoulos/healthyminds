@@ -44,14 +44,13 @@ const About = ({}) => {
             </p>
             <p>
               Ο σκοπός μας είναι να χτισουμε μια σχέση εμπιστοσύνης σεβασμού,
-              συνεργασίες, και ενδυνάμωσης. Είμαστε εδώ για να υποστηρίξουμε το
-              ταξίδι σας προς μια νέα ζωή, και να βιώσετε ένα ξεχωριστό ταξίδι
-              στην Healthy Minds
+              συνεργασίας, και ενδυνάμωσης. Είμαστε εδώ για να υποστηρίξουμε το
+              ταξίδι σας προς μια νέα ζωή, και να βιώσετε κάτι ξεχωριστό.
             </p>
           </article>
         </div>
       </article>
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10" />
       <article>
         <h4 className="text-2xl font-semibold text-center my-2">
           H <span className="orange_gradient">ομάδα</span> μας!
@@ -101,7 +100,7 @@ const About = ({}) => {
         </article>
       </article>
 
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10 " />
       <article>
         <h4 className="text-2xl font-semibold text-center my-2">
           Θεραπεία <span className="orange_gradient">online;</span>{" "}
@@ -134,14 +133,14 @@ const About = ({}) => {
           είτε <span className="orange_gradient">online!</span>
         </h6>
       </article>
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10" />
       <article>
         <h4 className="text-2xl font-semibold text-center my-2">
           <span className="orange_gradient">Q & A</span>
         </h4>
         <AccordionQA />
       </article>
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10" />
       <article>
         <h4 className="text-2xl font-semibold text-center my-2">
           <span className="orange_gradient">Μεγαλώνουμε!</span>{" "}
