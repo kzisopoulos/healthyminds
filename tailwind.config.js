@@ -1,4 +1,3 @@
-const { blackA, mauve, violet } = require("@radix-ui/colors");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -14,9 +13,6 @@ module.exports = {
       },
       colors: {
         "primary-orange": "#FF5722",
-        ...blackA,
-        ...mauve,
-        ...violet,
       },
       keyframes: {
         slideDownAndFade: {

@@ -31,7 +31,7 @@ export default function Home() {
         src={"/hero2.jpg"}
         alt="Picture one hand trying to help another"
         width={400}
-        height={300}
+        height={400}
         className=" mx-auto aspect-square rounded-full shadow-xl object-cover"
       />
       <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10" />

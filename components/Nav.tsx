@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import MobileNavMenu from "@components/MobileNavMenu";
 import { FC } from "react";
 import DesktopNavMenu from "@/components/DesktopNavMenu";
+import MobilieNavMenu from "./MobileNavMenu";
 
 interface NavProps {}
 
@@ -12,7 +12,7 @@ const Nav: FC<NavProps> = ({}) => {
       <Link href="/">
         <span className="logo_text green_gradient">healthyminds.</span>
       </Link>
-      <MobileNavMenu />
+      <MobilieNavMenu />
       <DesktopNavMenu />
     </nav>
   );
