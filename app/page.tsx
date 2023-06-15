@@ -1,3 +1,4 @@
+import Spacer from "@components/Spacer";
 import Image from "next/image";
 import Link from "next/link";
 import { FaCaretRight } from "react-icons/fa";
@@ -5,9 +6,12 @@ import { FaCaretRight } from "react-icons/fa";
 export default function Home() {
   return (
     <section>
-      <h1 className="text-center head_text green_gradient p-4">
-        HealthyMinds.
-      </h1>
+      <header>
+        <h1 className="head_text capitalize text-center mx-auto green_gradient p-4 max-w-lg">
+          ψυχολογικό κέντρο
+          <span className="orange_gradient"> HealthyMinds.</span>
+        </h1>
+      </header>
       <p className="text-center max-w-xl mx-auto p-4">
         Καλωσήρθατε στο HealthyMinds, ο έμπιστος προορισμός σας για ψυχική υγεία
         και ευεξία. Στο HealthyMinds, καταλαβαίνουμε το πόσο σημαντικό ρόλο
@@ -19,7 +23,7 @@ export default function Home() {
         οι θεραπευόμενοι θα μπορούν να εκφράσουν τις σκέψεις , τα συναισθήματα
         και τις εμπειρίες τους.
       </p>
-      <div className="text-center pt-4 pb-8">
+      <div className="text-center p-4">
         <Link
           href="/about"
           className="inline-block uppercase orange_background text-white font-semibold py-2 px-4 rounded-md"
@@ -27,20 +31,25 @@ export default function Home() {
           Γνωριστε μας
         </Link>
       </div>
-      <Image
-        src={"/hero2.jpg"}
-        alt="Picture one hand trying to help another"
-        priority={true}
-        width={400}
-        height={400}
-        className=" mx-auto aspect-square rounded-full shadow-xl object-cover"
-      />
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10" />
-      <div className="flex flex-col gap-4 justify-center lg:flex-row lg:gap-10">
-        <div className="glassmorphism w-full">
-          <h3 className="green_gradient md:text-xl font-semibold">
-            Μεθοδολογία
-          </h3>
+      <Spacer />
+      <figure>
+        <Image
+          src={"/hero2.jpg"}
+          alt="Picture one hand trying to help another"
+          priority={true}
+          width={400}
+          height={400}
+          className=" mx-auto aspect-square rounded-full shadow-xl object-cover"
+        />
+      </figure>
+      <Spacer />
+      <article className="flex flex-col gap-4 justify-center lg:flex-row lg:gap-10">
+        <section className="glassmorphism w-full">
+          <header>
+            <h2 className="md:text-xl font-semibold text-2xl text-teal-shade-3 mb-2">
+              Μεθοδολογία
+            </h2>
+          </header>
           <p className="py-2">
             Το θεραπευτικό μοντέλο που υποστηρίζουμε στο HealthyMinds είναι η
             γνωσιακή συμπεριφορική θεραπεία (ΓΣΘ). Το συγκεκριμένο μοντέλο
@@ -56,16 +65,18 @@ export default function Home() {
             διαδικασία οδηγεί στον καθορισμό των στόχων που θα τεθούν και στην
             στρατηγική που θα ακολουθηθεί για την επίτευξη.
           </p>
-          <p>
+          <p className="py-2">
             Τέλος, η ΓΣΘ μπορεί να χρησιμοποιηθεί είτε μόνη της είτε σε
             συνδυασμό με την κατάλληλη φαρμακευτική αγωγή, ανάλογα με την
             σοβαρότητα της κατάστασης του κάθε θεραπευόμενου.
           </p>
-        </div>
-        <div className="glassmorphism w-full">
-          <h3 className="green_gradient md:text-xl font-semibold">
-            Ωφέλη Ψυχοθεραπείας
-          </h3>
+        </section>
+        <section className="glassmorphism w-full flex flex-col">
+          <header>
+            <h2 className="md:text-xl font-semibold text-2xl text-teal-shade-3 mb-2">
+              Ωφέλη Ψυχοθεραπείας
+            </h2>
+          </header>
           <p className="pt-2">Που μπορεί να βοηθήσει η ΓΣΘ</p>
           <ul className="py-2 flex flex-col gap-1">
             <li className="flex items-center">
@@ -103,12 +114,12 @@ export default function Home() {
           </ul>
           <Link
             href="/services"
-            className="inline-block mt-4 uppercase orange_background text-white font-semibold py-2 px-4 text-base rounded-md"
+            className="uppercase orange_background mt-4 text-white font-semibold py-2 px-4 text-base shrink-0 rounded-md self-start lg:mt-auto"
           >
             Υπηρεσιες
           </Link>
-        </div>
-      </div>
+        </section>
+      </article>
     </section>
   );
 }

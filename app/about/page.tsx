@@ -1,4 +1,5 @@
 import AccordionQA from "@components/AccordionQA";
+import Spacer from "@components/Spacer";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,13 +12,14 @@ import {
 
 const About = ({}) => {
   return (
-    <section className="py-8">
-      <article>
-        <h4 className="heading_text mb-8 text-center">
-          Λίγα λόγια για το
-          <span className="orange_gradient"> HealthyMinds.</span>
-        </h4>
-        <div className="flex flex-col md:flex-row md:items-center gap-10">
+    <article className="">
+      <section>
+        <header>
+          <h1 className="head_text text-center mx-auto green_gradient p-4 max-w-xl">
+            Η Ιστορία μας και η αποστολή μας
+          </h1>
+        </header>
+        <div className="flex flex-col lg:flex-row md:items-center gap-10 p-4">
           <Image
             src={"/book.jpg"}
             alt="Εικόνα ενός βίβλιου με γυαλία πάνω"
@@ -25,7 +27,7 @@ const About = ({}) => {
             height={350}
             className="aspect-square rounded-full object-cover shadow-lg mx-auto mb-2"
           />
-          <article className="flex flex-col gap-4">
+          <section className="flex flex-col gap-4">
             <p>
               Στο HealthyMinds πιστεύουμε στη δύναμη της θεραπείας η οποία
               προάγει την προσωπική ανάπτυξη, και την προσωπική ίαση. Θα
@@ -47,15 +49,17 @@ const About = ({}) => {
               συνεργασίας, και ενδυνάμωσης. Είμαστε εδώ για να υποστηρίξουμε το
               ταξίδι σας προς μια νέα ζωή, και να βιώσετε κάτι ξεχωριστό.
             </p>
-          </article>
+          </section>
         </div>
-      </article>
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10" />
-      <article>
-        <h4 className="text-2xl font-semibold text-center my-2">
-          H <span className="orange_gradient">ομάδα</span> μας!
-        </h4>
-        <article className="flex flex-col md:flex-row md:gap-8 md:items-center">
+      </section>
+      <Spacer />
+      <section>
+        <header>
+          <h2 className="text-2xl font-semibold text-center my-2">
+            H <span className="orange_gradient">ομάδα</span> μας!
+          </h2>
+        </header>
+        <div className="flex flex-col md:flex-row md:gap-8 md:items-center">
           <div>
             <Image
               src={"/mv_selfie.jpg"}
@@ -68,8 +72,12 @@ const About = ({}) => {
               &quot;Κλινικός Ψυχολόγος, Ιδρυτής&quot;
             </p>
           </div>
-          <div className="glassmorphism w-full my-2 text-sm ">
-            <h3 className="text-xl text-center pb-2">Μιχάλης Βαζούρας</h3>
+          <section className="glassmorphism w-full my-2 text-sm ">
+            <header>
+              <h3 className="text-xl text-teal-shade-4 font-medium text-center pb-4">
+                Μιχάλης Βαζούρας
+              </h3>
+            </header>
             <div className="flex flex-col gap-1 pb-1 md:flex-row md:items-center md:gap-4">
               <FaUniversity className="w-8 h-8 text-amber-600 mx-auto" />
               <p className="text-center w-full md:text-start">
@@ -96,15 +104,16 @@ const About = ({}) => {
                 κέντρα.
               </p>
             </div>
-          </div>
-        </article>
-      </article>
-
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10 " />
-      <article>
-        <h4 className="text-2xl font-semibold text-center my-2">
-          Θεραπεία <span className="orange_gradient">online;</span>{" "}
-        </h4>
+          </section>
+        </div>
+      </section>
+      <Spacer />
+      <section>
+        <header>
+          <h2 className="text-2xl font-semibold text-center my-2">
+            Θεραπεία <span className="orange_gradient">online;</span>{" "}
+          </h2>
+        </header>
         <p className="max-w-4xl text-center mx-auto my-2">
           Η τεχνολογία μας δίνει την δυνατότητα μέσω της online θεραπείας να
           ξεπεραστούν τα οποιαδήποτε εμπόδια με σκοπό την απόλυτα εχέμυθη
@@ -112,39 +121,47 @@ const About = ({}) => {
         </p>
 
         <div className="flex flex-col gap-2 my-4 sm:flex-row sm:justify-center  max-w-md mx-auto">
-          <Image
-            src={"/on_premise.svg"}
-            alt="Εικόνα που δείχνει τον θεραπευόμενο στο γραφείο του HealthyMinds."
-            width={150}
-            height={150}
-            className="aspect-square rounded-full object-cover shadow-lg mx-auto mb-2"
-          />
-          <Image
-            src={"/remote.svg"}
-            alt="Εικόνα που δείχνει τον θεραπευόμενο σε online συνεδρία με ειδικό του HealthyMinds."
-            width={150}
-            height={150}
-            className="aspect-square rounded-full object-cover shadow-lg mx-auto mb-2"
-          />
+          <figure>
+            <Image
+              src={"/on_premise.svg"}
+              alt="Εικόνα που δείχνει τον θεραπευόμενο στο γραφείο του HealthyMinds."
+              width={150}
+              height={150}
+              className="aspect-square rounded-full object-cover shadow-lg mx-auto mb-2"
+            />
+          </figure>
+          <figure>
+            <Image
+              src={"/remote.svg"}
+              alt="Εικόνα που δείχνει τον θεραπευόμενο σε online συνεδρία με ειδικό του HealthyMinds."
+              width={150}
+              height={150}
+              className="aspect-square rounded-full object-cover shadow-lg mx-auto mb-2"
+            />
+          </figure>
         </div>
-        <h6 className="text-sm font-semibold text-center my-2">
+        <p className="text-sm font-semibold text-center my-2">
           Τώρα μπορείς να κλείσεις το ραντεβού σου είτε για
           <span className="orange_gradient"> συνεδρία δια ζώσης </span>
           είτε <span className="orange_gradient">online!</span>
-        </h6>
-      </article>
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10" />
-      <article>
-        <h4 className="text-2xl font-semibold text-center my-2">
-          <span className="orange_gradient">Q & A</span>
-        </h4>
+        </p>
+      </section>
+      <Spacer />
+      <section>
+        <header>
+          <h2 className="text-2xl font-semibold text-center my-2">
+            <span className="orange_gradient">FAQ</span>
+          </h2>
+        </header>
         <AccordionQA />
-      </article>
-      <hr className="w-48 h-1 mx-auto my-2 bg-green-100 border-0 rounded md:my-10" />
-      <article>
-        <h4 className="text-2xl font-semibold text-center my-2">
-          <span className="orange_gradient">Μεγαλώνουμε!</span>{" "}
-        </h4>
+      </section>
+      <Spacer />
+      <section>
+        <header>
+          <h2 className="text-2xl font-semibold text-center my-2">
+            <span className="orange_gradient">Μεγαλώνουμε!</span>{" "}
+          </h2>
+        </header>
         <p className="text-center max-w-xl mx-auto">
           Σας ευχαριστούμε πολύ για την στήριξη σας! Η ομάδα του HealthyMinds
           αναζητά ψυχολόγο, κάνε την αίτηση σου και μπές στην ομάδα μας.
@@ -157,8 +174,8 @@ const About = ({}) => {
             Αιτηση
           </Link>
         </div>
-      </article>
-    </section>
+      </section>
+    </article>
   );
 };
 export const metadata: Metadata = {

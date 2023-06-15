@@ -1,5 +1,6 @@
 "use client";
 import ContactForm from "@components/ContactForm";
+import Spacer from "@components/Spacer";
 import Image from "next/image";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -7,19 +8,20 @@ import "react-toastify/dist/ReactToastify.css";
 const page = ({}) => {
   return (
     <section className="py-4">
-      <h1 className="heading_text mb-5 max-w-5xl">
-        <div className="mb-3 md:mb-0">
-          Έλα να ξεκινήσουμε λοιπόν με την πρώτη σου συνδεδρία
-          <span className="orange_gradient"> εντελώς δωρεάν.</span>
-        </div>
-        Ένα κλίκ <span className="orange_gradient">away</span> απο το να κάνεις
-        μία νέα <span className="orange_gradient">αρχή!</span>
-      </h1>
-      <article className="flex flex-col max-w-3xl gap-5 items-center md:flex-row  md:items-start">
-        <p className="md:pt-5">
+      <header>
+        <h1 className="head_text text-center mx-auto green_gradient p-4 max-w-xl">
+          Επικοινωνήστε μαζί μας
+        </h1>
+      </header>
+      <article className="flex flex-col text-center p-4 gap-5 items-center justify-center max-w-xl mx-auto">
+        <p>
           Καμία αρχή δεν είναι εύκολή, όμως στην HealthyMinds πιστέυουμε σε
           εσένα και σου δίνουμε την ευκαιρία να γνωρίσεις την ομάδα μας με την
           πρώτη σου συνδεδρία εντελώς δωρεάν.
+        </p>
+        <p>
+          Στείλτε μας ένα μήνυμα και αφήστε την επαγγελματική μας ομάδα να
+          φροντίσει για εσάς.
         </p>
         <Image
           src={"./contact.svg"}
@@ -28,6 +30,7 @@ const page = ({}) => {
           height={125}
         />
       </article>
+      <Spacer />
       <ContactForm />
       <ToastContainer
         position="top-center"

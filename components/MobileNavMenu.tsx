@@ -23,46 +23,46 @@ const MobilieNavMenu = () => {
         <FaStream
           role="button"
           aria-label="Button for opening mobile navigation"
-          className="text-green-400 text-xl md:hidden"
+          className="text-teal-shade-2 text-xl md:hidden"
         />
       </PopoverTrigger>
       {showNav && (
-        <PopoverContent className="bg-white mx-5 my-2 md:hidden shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)]">
+        <PopoverContent className="bg-primary-teal-light rounded-md text-teal-shade-5 text-center md:hidden shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)]">
           <ul>
             <li>
               <Link
                 href="/"
-                className="inline-block py-2 hover:bg-green-50 px-4 w-full "
+                className="inline-block py-4 hover:bg-teal-shade-1 hover:text-primary-teal-light uppercase tracking-tighter font-medium px-4 w-full "
                 aria-label="Συνδεσμός για την αρχική σελίδα"
                 onClick={() => setShowNav(false)}
               >
-                Αρχική
+                Αρχικη
               </Link>
             </li>
             <li>
               <Link
                 href="/about"
-                className="inline-block py-2 hover:bg-green-50 px-4 w-full "
+                className="inline-block py-4 hover:bg-teal-shade-1 hover:text-primary-teal-light uppercase tracking-tighter font-medium px-4 w-full "
                 aria-label="Συνδεσμός για την σελίδα Σχετικά με εμάς"
                 onClick={() => setShowNav(false)}
               >
-                Σχετικά με εμάς
+                Σχετικα με εμας
               </Link>
             </li>
             <li>
               <Link
                 href="/services"
-                className="inline-block py-2 hover:bg-green-50 px-4 w-full "
+                className="inline-block py-4 hover:bg-teal-shade-1 hover:text-primary-teal-light uppercase tracking-tighter font-medium px-4 w-full "
                 aria-label="Συνδεσμός για την σελίδα υπηρεσίες"
                 onClick={() => setShowNav(false)}
               >
-                Υπηρεσίες
+                Υπηρεσιες
               </Link>
             </li>
             <li>
               <Link
                 href="/blog"
-                className="inline-block py-2 hover:bg-green-50 px-4 w-full "
+                className="inline-block py-4 hover:bg-teal-shade-1 hover:text-primary-teal-light uppercase tracking-tighter font-medium px-4 w-full "
                 aria-label="Συνδεσμός για την σελίδα blog - αρθρογραφίας"
                 onClick={() => setShowNav(false)}
               >
@@ -72,11 +72,11 @@ const MobilieNavMenu = () => {
             <li>
               <Link
                 href="/contact"
-                className="inline-block py-2 hover:bg-green-50 px-4 w-full "
+                className="inline-block py-4 hover:bg-teal-shade-1 hover:text-primary-teal-light uppercase tracking-tighter font-medium px-4 w-full "
                 aria-label="Συνδεσμός για την σελίδα επικοινωνίας"
                 onClick={() => setShowNav(false)}
               >
-                Επικοινωνία
+                Επικοινωνια
               </Link>
             </li>
           </ul>

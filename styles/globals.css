@@ -82,8 +82,8 @@
   left: 50%;
   transform: translateX(-50%);
   width: 0;
-  height: 2px;
-  background-color: #166534;
+  height: 3px;
+  background-color: #007061;
   transition: width 0.3s ease;
 }
 
@@ -93,7 +93,7 @@
 /* Tailwind Styles */
 
 .app {
-  @apply max-w-7xl mx-auto sm:px-16 px-6 text-gray-700 tracking-wide;
+  @apply max-w-7xl mx-auto sm:px-16 px-6 text-teal-shade-5 tracking-wide;
 }
 
 .black_btn {
@@ -105,7 +105,7 @@
 }
 
 .head_text {
-  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
 }
 
 .orange_gradient {
@@ -117,7 +117,7 @@
 }
 
 .green_gradient {
-  @apply bg-gradient-to-r from-green-500 via-teal-300 to-green-400 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-primary-teal-dark via-teal-shade-2 to-teal-shade-3 bg-clip-text text-transparent;
 }
 
 .blue_gradient {
@@ -137,7 +137,7 @@
 }
 
 .glassmorphism {
-  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+  @apply rounded-xl bg-primary-teal/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-8;
 }
 
 .prompt_layout {
@@ -163,7 +163,7 @@
   @apply font-satoshi font-semibold text-3xl  tracking-wide;
 }
 .heading_text {
-  @apply font-satoshi font-semibold text-3xl md:leading-relaxed;
+  @apply font-satoshi font-semibold text-4xl md:leading-relaxed text-teal-shade-3;
 }
 .subheading_text {
   @apply font-satoshi font-semibold text-xl;

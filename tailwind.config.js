@@ -12,7 +12,15 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
       },
       colors: {
-        "primary-orange": "#FF5722",
+        "primary-teal": "#14B8A6",
+        "primary-teal-dark": "#569D92",
+        "primary-teal-light": "#EFFCF9",
+        "primary-orange": "#FFA17A",
+        "teal-shade-1": "#14B8A6",
+        "teal-shade-2": "#009383",
+        "teal-shade-3": "#007061",
+        "teal-shade-4": "#004E41",
+        "teal-shade-5": "#002E24",
       },
       keyframes: {
         slideDownAndFade: {

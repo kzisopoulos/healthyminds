@@ -17,10 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gradient-to-r from-slate-50 via-blue-50 to-slate-50">
+      <body className="bg-primary-teal-light">
         <main className="app ">
           <Nav />
-          <section className="min-h-[calc(100vh-230px)]">{children}</section>
+          <section className="min-h-[calc(100vh-230px)] my-10">
+            {children}
+          </section>
           <Footer />
         </main>
       </body>

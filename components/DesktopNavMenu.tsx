@@ -1,25 +1,22 @@
 import Link from "next/link";
-import { FC } from "react";
 
-interface DesktopNavMenuProps {}
-
-const DesktopNavMenu: FC<DesktopNavMenuProps> = ({}) => {
+const DesktopNavMenu = () => {
   return (
-    <nav className="hidden md:flex gap-5 text-green-800">
+    <nav className="hidden text-sm tracking-tighter gap-3 md:flex lg:text-base lg:gap-5 text-teal-shade-4 uppercase font-medium">
       <Link className="link" href="/">
-        Αρχική
+        Αρχικη
       </Link>
       <Link className="link" href="/about">
-        Σχετικά με εμάς
+        Σχετικα με εμας
       </Link>
       <Link className="link" href="/services">
-        Υπηρεσίες
+        Υπηρεσιες
       </Link>
       <Link className="link" href="/blog">
         Blog
       </Link>
       <Link className="link" href="/contact">
-        Επικοινωνία
+        Επικοινωνια
       </Link>
     </nav>
   );
