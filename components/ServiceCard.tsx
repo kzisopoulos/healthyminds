@@ -19,7 +19,7 @@ const ServiceCard: FC<ServiceCardProps> = ({
       <h3 className="font-semibold text-2xl text-teal-shade-3 mb-5 max-w-[200px] sm:max-w-xs">
         {title}
       </h3>
-      <div className="flex gap-2 mb-4">
+      <div className="flex flex-col sm:flex-row gap-2 mb-4">
         {tags.map((tag) => (
           <span
             key={tag}
