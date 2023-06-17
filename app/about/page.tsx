@@ -12,7 +12,7 @@ import {
 
 const About = ({}) => {
   return (
-    <article className="">
+    <article>
       <section>
         <header>
           <h1 className="head_text text-center mx-auto green_gradient p-4 max-w-xl">

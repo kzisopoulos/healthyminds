@@ -5,9 +5,9 @@ import Image from "next/image";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const page = ({}) => {
+const Contact = () => {
   return (
-    <section className="py-4">
+    <section>
       <header>
         <h1 className="head_text text-center mx-auto green_gradient p-4 max-w-xl">
           Επικοινωνήστε μαζί μας
@@ -15,9 +15,9 @@ const page = ({}) => {
       </header>
       <article className="flex flex-col text-center p-4 gap-5 items-center justify-center max-w-xl mx-auto">
         <p>
-          Καμία αρχή δεν είναι εύκολή, όμως στην HealthyMinds πιστέυουμε σε
-          εσένα και σου δίνουμε την ευκαιρία να γνωρίσεις την ομάδα μας με την
-          πρώτη σου συνδεδρία εντελώς δωρεάν.
+          Καμία αρχή δεν είναι εύκολή, όμως στην HealthyMinds πιστέυουμε σε εσάς
+          και σας δίνουμε την ευκαιρία να γνωρίσετε την ομάδα μας με την πρώτη
+          σας συνδεδρία εντελώς δωρεάν.
         </p>
         <p>
           Στείλτε μας ένα μήνυμα και αφήστε την επαγγελματική μας ομάδα να
@@ -48,4 +48,4 @@ const page = ({}) => {
   );
 };
 
-export default page;
+export default Contact;

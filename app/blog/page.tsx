@@ -1,13 +1,10 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
 
-interface pageProps {}
-
-const page: FC<pageProps> = ({}) => {
+const Blog = () => {
   return (
-    <section className="py-8">
+    <section>
       <h1 className="heading_text mb-5 max-w-4xl">
         Υπό κατασκευή. Το τμήμα των{" "}
         <span className="orange_gradient">blogs - αρθρογραφίας</span> του site
@@ -36,4 +33,4 @@ export const metadata: Metadata = {
     "Healthyminds | Αρθρογραφία - Blogs | Διαβάστε πρώτοι τα νέα άρθρα του κλινικού ψυχολόγου Μιχάλη Βαζούρα.",
 };
 
-export default page;
+export default Blog;

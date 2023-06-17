@@ -35,7 +35,7 @@ export default function Home() {
       <figure>
         <Image
           src={"/hero2.jpg"}
-          alt="Picture one hand trying to help another"
+          alt="Picture of a group of people happily enjoying a sunset"
           priority={true}
           width={400}
           height={400}

@@ -1,31 +1,37 @@
+import Spacer from "@components/Spacer";
 import { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { FC } from "react";
-
-interface pageProps {}
-
-const page: FC<pageProps> = ({}) => {
+import { services } from "@lib/static";
+import ServiceCard from "@components/ServiceCard";
+const Services = () => {
   return (
-    <section className="py-8">
-      <h1 className="heading_text mb-5 max-w-4xl">
-        Υπό κατασκευή. Το τμήμα των{" "}
-        <span className="orange_gradient">υπηρεσιών</span> του site θα είναι
-        σύντομα διαθέσιμο!
-      </h1>
-      <Image
-        src={"./under_construction.svg"}
-        alt={"Εικόνα που δείχνει εργάτες να κατασκευάζουν ένα σπίτι."}
-        width={300}
-        height={300}
-        className="mx-auto my-10"
-      />
-      <Link
-        href="/"
-        className="inline-block uppercase orange_background text-white font-semibold py-2 px-4 rounded-md"
-      >
-        Επιστροφη στην αρχικη
-      </Link>
+    <section>
+      <header>
+        <h1 className="head_text text-center mx-auto green_gradient p-4 max-w-xl">
+          Οι <span className="orange_gradient">υπηρεσίες</span> μας
+        </h1>
+        <h2 className="text-center text-2xl p-4">
+          Επαγγελματική φροντίδα για την ψυχική ευεξία
+        </h2>
+      </header>
+      <p className="text-center p-4 max-w-xl mx-auto">
+        Εδώ στο HealthyMinds, προσφέρουμε εξειδικευμένη υποστήριξη για την
+        ψυχική ευεξία σας. Μέσα από προσαρμοσμένες ατομικές συνεδρίες αλλά και
+        ομαδικές συναντήσεις, σας βοηθούμε να επιτύχετε τους στόχους σας και να
+        βελτιώσετε την ποιότητα ζωής σας. Είμαστε εδώ για να σας υποστηρίξουμε
+        σε κάθε βήμα του ταξιδιού σας προς την ψυχική ευεξία.
+      </p>
+      <Spacer />
+      <div className="flex flex-col items-center md:items-stretch gap-5 md:flex-row md:flex-wrap md:justify-center">
+        {services.map((service) => (
+          <ServiceCard
+            key={service.id}
+            title={service.title}
+            content={service.content}
+            coupon={service.coupon}
+            tags={service.tags}
+          />
+        ))}
+      </div>
     </section>
   );
 };
@@ -35,4 +41,4 @@ export const metadata: Metadata = {
   description:
     "Healthyminds | Υπηρεσίες | Ενημερωθείτε για τις υπηρεσίες που προσφέρουμε στο HealthyMinds.",
 };
-export default page;
+export default Services;
