@@ -12,11 +12,6 @@ import Link from "next/link";
 const MobilieNavMenu = () => {
   const [showNav, setShowNav] = useState<boolean>(false);
 
-  const toggle = () => {
-    console.log("hello");
-    setShowNav((prev) => !prev);
-  };
-
   return (
     <Popover>
       <PopoverTrigger onClick={() => setShowNav(true)}>

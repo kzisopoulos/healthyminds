@@ -20,7 +20,6 @@ const ContactForm = () => {
     try {
       setIsLoading(true);
       const res = await submitContactForm(data);
-      console.log(res);
       toast.success(res.data.message);
     } catch (error: any) {
       if (error instanceof AxiosError) {
