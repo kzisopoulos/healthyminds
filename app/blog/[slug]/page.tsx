@@ -12,6 +12,8 @@ interface slugProps {
   params: { slug: string };
 }
 
+export const revalidate = 60;
+
 const slug = async ({ params }: slugProps) => {
   const slug = params.slug;
   const blog = await getBlog(slug);

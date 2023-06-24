@@ -6,6 +6,8 @@ import { FaCalendar, FaClock } from "react-icons/fa";
 import { formatDistance } from "date-fns";
 import { el } from "date-fns/locale";
 
+export const revalidate = 60;
+
 const Blog = async () => {
   const blogs = await getBlogs();
   return (
