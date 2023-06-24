@@ -7,7 +7,7 @@ export default async function sitemap() {
   const blogRoutes = blogs.map((blog) => {
     return {
       url: `http://healthyminds.gr/blog/${blog.slug}`,
-      lastModified: new Date().toISOString,
+      lastModified: new Date().toISOString(),
     };
   });
 
